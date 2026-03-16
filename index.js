@@ -155,7 +155,7 @@ if (!config.token || config.token === "YOUR_BOT_TOKEN_HERE") {
   process.exit(1);
 }
 
-client.login(config.token || process.env.TOKEN).catch(err => {
+client.login(config.token).catch(err => {
   console.error("✗ Login failed:", err.message);
   process.exit(1);
 });

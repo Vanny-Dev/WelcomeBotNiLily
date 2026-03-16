@@ -2,10 +2,11 @@
 // ║     WELCOME BOT CONFIGURATION            ║
 // ║  Edit everything here — no code needed!  ║
 // ╚══════════════════════════════════════════╝
+require("dotenv").config();
 
 module.exports = {
   // ─── Bot Settings ───────────────────────────────────
-  token: "",
+  token: process.env.TOKEN,
   welcomeChannelId: "1482275037649305761",
 
   // For instant slash command registration during development.
